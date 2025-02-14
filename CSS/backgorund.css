@@ -1,0 +1,40 @@
+html, body{
+    margin: 0;
+    box-sizing: border-box;
+    overflow:visible;
+}
+
+.degrade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Adiciona flex-direction para garantir que os itens fiquem em coluna */
+    width: 100%; /*antes estava 100vw*/
+    min-height: 100%; /* Faz com que o fundo degrade cubra toda a altura */
+    background: linear-gradient(45deg, #243642, #387478, #629584, #E2F1E7);
+    background-size: 300% 300%;
+    animation: colors 10s ease infinite;
+}
+
+@keyframes colors {
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
+/*
+opção 1:  #659287, #B1C29E, #FFE6A9, #DEAA79
+opção 2:  #1A1A19, #31511E, #859F3D, #F6FCDF 
+opção 3:  #E9EED9, #CBD2A4, #9A7E6F, #54473F 
+opcão 4 azul: #243642, #387478, #629584, #E2F1E7
+dark mode: #2a004e, #500073, #c62300, #f14a00
+*/

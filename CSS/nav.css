@@ -1,0 +1,60 @@
+/* Reseta margens e padding do body e da lista */
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;  /* Garantir que a largura da página ocupe toda a tela */
+}
+
+/* Estilo para o header */
+header {
+    width: 100%;
+    position: fixed;  /* Fixa a navegação no topo */
+    top: 0;
+    left: 0;
+    background-color: #1a1a19;
+    z-index: 1000;  /* Garante que o menu fique acima de outros elementos */
+}
+
+/* Estilo para a navegação */
+.navegacao {
+    width: 100%;  /* Garante que a navegação ocupe toda a largura da tela */
+    padding: 0;
+}
+
+/* Estilo para a lista de navegação */
+.lista_navegacao {
+    display: flex;  /* Flexbox para alinhar itens horizontalmente */
+    justify-content: space-around;  /* Espaço igual entre os itens */
+    align-items: center;  /* Alinha os itens verticalmente no centro */
+    list-style: none;  /* Remove os pontos da lista */
+    padding: 0;
+    margin: 0;
+    height: 60px;  /* Altura da barra de navegação */
+}
+
+/* Estilo para os itens da navegação */
+.lista_navegacao li {
+    color: #fff;  /* Cor do texto */
+    font-family: "Montserrat", sans-serif;  /* Fonte da navegação */
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 0 20px;  /* Espaçamento interno lateral entre os itens */
+    cursor: pointer;
+    transition: color 0.3s ease;  /* Efeito de transição para a cor */
+}
+
+.lista_navegacao li:hover {
+    color: #387478;  /* Cor quando o item for hover (exemplo de cor diferente) */
+}
+
+/* Estilo para o logo (opcional) */
+.lista_navegacao li img {
+    height: 64px;  /* Ajusta o tamanho da logo */
+    width: auto;  /* Mantém a proporção da logo */
+}
+
+/* Ajusta o conteúdo para não ser sobreposto pela navegação fixa */
+.content {
+    padding-top: 80px;  /* Adiciona um espaço extra para o conteúdo não ficar por baixo da barra de navegação */
+}
