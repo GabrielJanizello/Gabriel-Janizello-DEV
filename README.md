@@ -15,7 +15,7 @@ Este é o meu site pessoal onde compartilho informações sobre minha trajetóri
 
 ## 🌐 Link para o site
 
-Você pode acessar o meu site pessoal [aqui]().
+Você pode acessar o meu site pessoal [aqui](https://gabrieljanizello.github.io/Gabriel-Janizello-DEV/).
 
 
 
